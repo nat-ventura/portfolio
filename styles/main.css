@@ -1,3 +1,10 @@
+/*
+home
+about
+projects
+contact
+resume  */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -30,25 +37,32 @@ html, body {
         /* justify-content: center; */
         width: 100%;
         /* justify-content: space-around; */
-        font-family: Lato;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .flower-holder {
+        /* background-color: black; */
+        padding-left: 20%;
     }
 
     .flower {
         width: 70%;
         transform: rotate(35deg);
-        padding-right: 5%;
     }
 
     .top-name {
-        padding-top: 5%;
-        font-family: Lato Bold;
-        font-size: 3.5rem;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        font-family: Lato Bold; 
+        font-size: 3.25rem;
     }
 
     .side-links {
         display: flex;
         flex-direction: column;
         /* margin-right: 20%; */
+        padding-left: 6%;
     }
 
     .side-links img {
@@ -65,10 +79,10 @@ html, body {
 
     .links-and-photo {
         display: flex;
-        background-color: rgba(0,140,255,0.5);
+        border: 15px solid rgba(0,140,255,0.5);
         flex-direction: row;
         justify-content: space-around;
-        width: 90%;
+        width: 80%;
         align-items: center;
         padding: 5% 0 5% 0;
         margin-bottom: 10%;
@@ -76,10 +90,12 @@ html, body {
     }
 
     .greeting {
-        width: 50%;
+        width: 70%;
         text-align: center;
-        /* padding-top: 10%; */
+        padding: 7.5%;
         font-size: 1.25rem;
+        background-color: white;
+        /* border-radius: 100%; */
     }
 
 }
