@@ -33,6 +33,7 @@ html, body {
     .side-links {
         display: flex;
         flex-direction: column;
+        margin-right: 20%;
     }
 
     .side-links img {
@@ -45,7 +46,6 @@ html, body {
     .main-photo {
         height: 200px;
         border-radius: 100%;
-        padding: 0 10% 0 10%;
     }
 
     .links-and-photo {
