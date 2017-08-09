@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(fonts/Lato/Lato-Bold.ttf) format("truetype");
+}
+
+/*Phone*/ 
+@media only screen and (min-width : 300px) {}
+
+    .top-container {
+        padding-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Lato;
+    }
+
+    .top-name {
+        font-family: Lato Bold;
+        font-size: 3.75rem;
+    }
+
+    .side-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-links img {
+        height: 50px;
+        width: 50px;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    .main-photo {
+        height: 200px;
+        border-radius: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .links-and-photo {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+
+    .greeting {
+        width: 80%;
+        text-align: center;
+        padding-top: 5%;
+        font-size: 1.25rem;
+    }
+
+/*Phone*/
+@media only screen and (min-width : 300px) and (orientation: landscape) {}
+
+
+/*Tablet*/
+@media only screen and (min-width : 750px) {}
+
+
+/*Desktop*/
+@media only screen and (min-width : 1200px) {}
