@@ -103,7 +103,7 @@ html, body {
     .projects-title, .skills-title {
         display: flex;
         padding-bottom: 7.5%;
-        padding-left: 5%;
+        /* padding-left: 5%; */
         justify-content: center;
         font-size: 2.8rem;
         color: rgba(0,0,0,.4);
@@ -111,15 +111,16 @@ html, body {
 
     .skills-title {
         display: flex;
-        padding-top: 5%;
-        padding-right: 5%;
+        padding-top: 10%;
+        /* padding-right: 5%; */
     }
 
-    .project-container {
+    .middle-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-left: 5%;
+        padding-right: 5%;
         padding-bottom: 5%;
         font-size: 2.8rem;
         color: rgba(0,0,0,.4);
@@ -141,7 +142,31 @@ html, body {
         font-weight: bold;
     }
 
+    .skills-container {
+        display: flex;
+        flex-flow: row wrap;
+        /* margin-left: 25%;
+        margin-right: 25%; */
+        margin-bottom: 10%;
+        border: 1px solid rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.05);
+        border-radius: 25px;
+        padding: 2rem;
+        width: 40%;
+        /* margin-left: 20%;
+        margin-right: 20%; */
+    }
 
+    .skills-container div {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 5%;
+    }
+
+    .skills-container img {
+        height: 40px;
+    }
 
 }
 
