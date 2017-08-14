@@ -1,7 +1,7 @@
 /*
 home
 about
-projects
+projects X
 contact
 resume  */
 
@@ -23,19 +23,17 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
+        justify-content: center;
         width: 100%;
+        /* margin-left: 5%; */
         /* justify-content: space-around; */
         z-index: 2;
-    }
-
-    .flower-holder {
     }
 
     .flower {
         position: absolute;
         top: 10%; 
-        right: 0;
+        right: .1%;
         /* margin-left: 10%; */
         /* margin-right: auto; */
         /* padding-left: 10%; */
@@ -121,8 +119,8 @@ html, body {
         align-items: center;
         padding-left: 5%;
         padding-right: 5%;
-        margin-left: 7.5%;
-        /* margin-right: 5%; */
+        /* margin-left: 7.5%; */
+        /* margin-left: 5%; */
         width: 95%;
         padding-bottom: 5%;
         font-size: 2.8rem;
@@ -138,11 +136,19 @@ html, body {
         background-color: rgba(0,0,0,.05);
         border-radius: 25px;
         padding: 2rem;
+        width: 75%;
     }
 
+    /* .biolingual p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } */
+
     .airtv {
-        margin-top: 5%;
+        margin-top: 10%;
         font-weight: bold;
+        width: 50%;
     }
 
     .skills-container {
@@ -154,8 +160,9 @@ html, body {
         border: 1px solid rgba(0,0,0,.4);
         background-color: rgba(0,0,0,.05);
         border-radius: 25px;
-        padding: 2rem;
+        padding: 2.5rem;
         width: 40%;
+        /* margin-left: 18%; */
         /* margin-left: 20%;
         margin-right: 20%; */
     }
@@ -167,7 +174,8 @@ html, body {
         padding-bottom: 5%;
     }
 
-    .skills-container img {
+    .skills-container img,
+    .biolingual img {
         height: 40px;
     }
 
