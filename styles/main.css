@@ -11,62 +11,56 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: -webkit-linear-gradient(-90deg, #0034FF, #A7DBFF); */
-    /* color: white; */
-    /* background: -webkit-linear-gradient(-90deg, #A7DBFF, white); */
-}
-
-@font-face {
-    font-family: Lato;
-    src: url(fonts/Lato/Lato-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Lato Bold";
-    src: url(fonts/Lato/Lato-Bold.ttf) format("truetype");
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;        background-color: rgba(255,255,255,0.9);
+    
 }
 
 /*Phone*/ 
 @media only screen and (min-width : 300px) {
 
     .top-container {
-        /* padding-top: 25%; */
+        padding-top: 50%; 
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
+        /* justify-content: space-between; */
         width: 100%;
         /* justify-content: space-around; */
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+        z-index: 2;
     }
 
     .flower-holder {
-        /* background-color: black; */
-        /* padding-left: 20%; */
     }
 
     .flower {
-        /* width: 70%; */
-        height: 100%;
-        transform: rotate(35deg);
-        -webkit-filter: invert(1);
-        filter: invert(1);
-        /* background-color: rgba(255,255,255,1); */
+        position: absolute;
+        top: 10%; 
+        right: 0;
+        /* margin-left: 10%; */
+        /* margin-right: auto; */
+        /* padding-left: 10%; */
+        /* right: 0; */
+        height: 62.5%;
+        transform: rotate(35deg); 
+        -webkit-filter: invert(1);  
+        filter: invert(1); 
+        z-index: -1;
     }
 
     .top-name {
-        padding-top: 10%;
-        padding-bottom: 5%;
-        font-family: Lato Bold; 
+        /* width: 100%; */
+        padding-top: 25%;
         font-size: 3.25rem;
+        color: rgba(0,0,0,.4);
+        letter-spacing: 1px;
+        /* font-weight: bold; */
     }
 
     .side-links {
         display: flex;
         flex-direction: column;
         /* margin-right: 20%; */
-        padding-left: 6%;
+        margin-left: auto;
     }
 
     .side-links img {
@@ -77,20 +71,22 @@ html, body {
     }
 
     .main-photo {
-        height: 150px;
-        border-radius: 100%; 
+        /* height: 150px;
+        border-radius: 100%;  */
     }
 
-    .links-and-photo {
+    .link-and-greet {
         display: flex;
-        border: 15px solid rgba(0,140,255,0.5);
+        /* display: none; */
+        /* border: 15px solid rgba(0,140,255,0.5); */
         flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
+        justify-content: space-between;
+        width: 90%;
         align-items: center;
-        padding: 5% 0 5% 0;
+        padding-top: 35%;
         margin-bottom: 10%;
         border-radius: 25px;
+        color: rgba(0,0,0,.7);
     }
 
     .greeting {
@@ -98,9 +94,54 @@ html, body {
         text-align: center;
         padding: 7.5%;
         font-size: 1.25rem;
-        background-color: white;
+        color: rgba(0,0,0,.5);
+        letter-spacing: 1px;
+        /* background-color: white; */
         /* border-radius: 100%; */
     }
+
+    .projects-title, .skills-title {
+        display: flex;
+        padding-bottom: 7.5%;
+        padding-left: 5%;
+        justify-content: center;
+        font-size: 2.8rem;
+        color: rgba(0,0,0,.4);
+    }
+
+    .skills-title {
+        display: flex;
+        padding-top: 5%;
+        padding-right: 5%;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        font-size: 2.8rem;
+        color: rgba(0,0,0,.4);
+    }
+
+    .biolingual, .airtv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        border: 1px solid rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.05);
+        border-radius: 25px;
+        padding: 2rem;
+    }
+
+    .airtv {
+        margin-top: 5%;
+        font-weight: bold;
+    }
+
+
 
 }
 
