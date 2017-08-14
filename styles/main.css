@@ -139,8 +139,9 @@ html, body {
 
     .airtv {
         margin-top: 10%;
-        font-weight: bold;
+        /* font-weight: bold; */
         width: 50%;
+        text-align: center;
     }
 
     .skills-container {
@@ -213,7 +214,6 @@ html, body {
         margin-top: 10%;
         margin-bottom: 10%;
         width: 40%;
-
     }
 
     .work-title, .about-title {
@@ -236,11 +236,11 @@ html, body {
 
 /*Tablet*/
 @media only screen and (min-width : 750px) {
-    
+
     .flower {
-        top: 0;
-        left: 17.5%;
-        height: 110%;
+        top: 15%;
+        left: 5%;
+        height: 70%;
     }
 
     .top-container {
@@ -254,17 +254,17 @@ html, body {
     }
 
     .top-name {
-        /* padding-top: 0; */
         font-size: 4rem;
-        padding-top: 75%;
-        /* padding-left: 25%; */
-        margin-bottom: 40%;
+        padding-top: 67.5%;
+        margin-bottom: 30%;
     }
 
     .top-greeting {
         width: 20%;
         padding-top: 0;
-        align-self: left;
+        margin-top: 0;
+        margin-bottom: 10%;
+        /* align-self: left; */
     }
 
     .skills-title {
@@ -282,6 +282,107 @@ html, body {
 
 }
 
+/*Tablet*/
+@media only screen and (min-width : 750px) and (orientation: landscape) {
+    
+    .flower {
+        top: 0;
+        left: 17.5%;
+        height: 90%;
+    }
+
+    .top-greeting {
+        padding-top: 0;
+    }
+
+    .top-name {
+        padding-top: 35%;
+        margin-bottom: 20%;
+    }
+
+    .biolingual {
+        width: 40%;
+    }
+    
+    .airtv {
+        width: 20%;
+    }
+
+    .skills-title {
+        padding-bottom: 5%;
+    }
+
+    .link-and-greet {
+        width: 60%;
+    }
+}
 
 /*Desktop*/
-@media only screen and (min-width : 1200px) {}
+@media only screen and (min-width : 1200px) {
+    .flower {
+        top: 0;
+        left: 17.5%;
+        height: 110%;
+    }
+    
+    .top-name {
+        font-size: 7rem;
+        /* margin-top: 10%; */
+        margin-bottom: 20%;
+    }
+
+    .top-greeting {
+        font-size: 4rem;
+        width: 50%;
+    }
+
+    .middle-container {
+        width: 100%;
+    }
+
+    .work-title, .skills-title {
+        font-size: 7rem;
+        padding: 2rem;
+        padding-bottom: 5%;
+    }
+
+    .about-title {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 7rem;
+    }
+
+    .biolingual, .airtv,
+    .about-me {
+        width: 75%;
+        font-size: 5rem;
+        padding: 4rem;
+    }
+
+    .biolingual p {
+        width: 80%;
+    }
+
+    .materials {
+        padding-bottom: 5%;
+    }
+
+    .airtv {
+        width: 35%;
+    }
+
+    .biolingual img, .skills-container img {
+        height: 200px;
+    }
+
+    .side-links {
+        width: 20%;
+        /* padding-bottom: 70%; */
+    }
+
+    .side-links img {
+        height: 120px;
+        width: 120px;
+    }
+
+}
