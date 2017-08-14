@@ -29,6 +29,7 @@ html, body {
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding-left: 1%;
         /* margin-left: 5%; */
         /* justify-content: space-around; */
         z-index: 2;
@@ -385,4 +386,8 @@ html, body {
         width: 120px;
     }
 
+    .skills-container {
+        width: 30%;
+        padding: 4rem;
+    }
 }
