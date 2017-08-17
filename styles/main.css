@@ -13,6 +13,8 @@ html, body {
     align-items: center;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     background-color: rgba(255,255,255,0.9);
+    /* white-space: nowrap; */
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -108,10 +110,9 @@ a {
       .nav--opened .nav__burger:after {
         transform: translate3d(0, -6px, 0) rotate(45deg);
       }
-      
-          
 
     .top-container {
+        /* position: relative; */
         padding-top: 45%; 
         display: flex;
         flex-direction: column;
@@ -182,7 +183,7 @@ a {
 
     .top-greeting {
         height: 180px;
-        position: relative;
+        /* position: relative; */
         /* z-index: 1; */
         width: 100%;
         background: url("../images/bluuuecopycopycopy.jpeg") no-repeat center bottom;
@@ -198,8 +199,8 @@ a {
 
     .second-divider {
         height: 180px;
-        position: relative;
-        width: 110%;
+        /* position: relative; */
+        width: 100%;
         background: url("../images/bluuuecopycopycopy.jpeg") no-repeat center bottom;
         padding-top: 35%;
         padding-bottom: 0;
@@ -248,11 +249,12 @@ a {
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
-        border: 1px solid rgba(0,0,0,.4);
+        /* border: 1px solid rgba(0,0,0,.4); */
         background-color: rgba(0,0,0,.05);
         border-radius: 25px;
         padding: 2rem;
         width: 75%;
+        /* box-shadow: 5px 6px 15px 1px rgba(0,0,0,0.15); */
         /* margin-left: 5%; */
         /* padding-right: 5%; */
     }
@@ -276,11 +278,12 @@ a {
         /* margin-left: 25%;
         margin-right: 25%; */
         /* margin-bottom: 10%; */
-        border: 1px solid rgba(0,0,0,.4);
+        /* border: 1px solid rgba(0,0,0,.4); */
         background-color: rgba(0,0,0,.05);
         border-radius: 25px;
         padding: 2.5rem 2.5rem 2rem 2.5rem;
         width: 40%;
+        /* box-shadow: 5px 6px 15px 1px rgba(0,0,0,0.15); */
         /* margin-left: 18%; */
         /* margin-left: 20%;
         margin-right: 20%; */
