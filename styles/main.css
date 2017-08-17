@@ -5,9 +5,18 @@ hamburger menu X
 resume
 */
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,6 +143,11 @@ a {
         -webkit-filter: invert(1);  
         filter: invert(1); 
         z-index: -1;
+    }
+
+    .flower-container {
+        width: 100%;
+        overflow: hidden;
     }
 
     .top-name {
