@@ -135,19 +135,35 @@ a {
     }
 
     .flower {
+        width: 100%;
+        transform: rotate(35deg);
+        -webkit-filter: invert(1);  
+        filter: invert(1); 
+
+    }
+
+    .shadymcshader {
+        background-color: rgba(255,255,255,.9);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        /* border: 10px solid red; */
+        z-index: 2;
+    }
+
+    .flower-container {
+        /* width: 50px;
+        overflow: hidden;
         position: absolute;
         top: 10%; 
         right: .1%;
         height: 62.5%;
-        transform: rotate(35deg); 
-        -webkit-filter: invert(1);  
-        filter: invert(1); 
-        z-index: -1;
-    }
 
-    .flower-container {
-        width: 100%;
+        z-index: -1; */
         overflow: hidden;
+        position: relative;
+        /* display: none; */
+        text-align: center;
     }
 
     .top-name {
