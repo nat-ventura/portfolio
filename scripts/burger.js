@@ -60,3 +60,8 @@ class FlexNav extends Component {
 document.addEventListener('DOMContentLoaded', function () {
     new FlexNav('#nav')
   })
+
+// adds scroll
+$(document).ready(function() {
+    $('#nav').localScroll({duration:800});
+ });

@@ -219,7 +219,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     padding-bottom: 0;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 20%;
+    margin-top: 2rem;
 }
 
 /*==========================================================================================================*/
@@ -254,14 +254,24 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 }
 
 .overlay {
+    position: absolute;
     height: 100%;
     z-index: 100;
-    transition: all 1s ease;
-    display: flex;
+    transition: opacity 1s ease;
+    /* display: flex; */
     flex-direction: column;
     width: 100%;
     padding-top: 1.6rem;
+    opacity: 0;
+    top: 0;
 }
+
+.no-touchevents .project:hover .overlay:hover,
+.project:hover .overlay {
+	background: rgba(255,255,255,0.9);
+    opacity: 0.9;
+}
+
 
 .built {
     margin-top: 0;
@@ -280,8 +290,16 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     margin-bottom: 1.2rem;
 }
 
-.top-row {
+/* .proj-button {
+    margin-left: .25rem;
+    margin-right: .25rem;
+} */
 
+.button-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Tooltip container */
@@ -323,9 +341,9 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
 .tooltip-bottom {
     position: absolute;
-    top: 90%;
+    /* top: 90%; */
     left: 50%;
-    margin-left: -60px;
+    margin-left: -2.3rem;
 }
 
 
@@ -376,25 +394,10 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 .project {
     width: 20rem;
     height: 20rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 	text-align: center;
 	position: relative;
 }
-
-.no-touchevents .project:hover .overlay:hover,
-.project:hover .overlay {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-	background: rgba(255,255,255,0.9);
-    opacity: 0.9;
-    top: 0;
-}
-
-/* .overlay h3 {
-	margin-top: 0;
-} */
 
 .overlay p,
 .project a {
@@ -460,6 +463,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
 #airdesc, #biodesc {
     font-size: 1rem;
+    padding: 5% 10% 5% 10%;
 }
 
 /* BIOLINGUAL ----------------------- */
@@ -566,7 +570,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    align-items: center;
+    align-items: flex-start;
     /* padding-top: 5%; */
     margin-bottom: 10%;
     border-radius: 25px;
@@ -576,7 +580,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 .side-links {
     display: flex;
     flex-direction: column;
-    padding-bottom: 90%;
+    /* padding-bottom: 2.5rem; */
     margin-left: 20%;
     /* margin-left: auto; */
 }
@@ -592,7 +596,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     width: 70%;
     text-align: left;
     padding: 0 7.5% 7.5% 7.5%;
-    font-size: 1rem;
+    font-size: .8rem;
     color: rgba(0,0,0,.5);
     letter-spacing: 1px;
 }
@@ -664,12 +668,12 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
 .about-title {
     margin-top: 0;
-    padding-top: 7.5%;
-    padding-bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .side-links {
-    padding-bottom: 40%;
+    /* padding-bottom: 40%; */
 }
 
 /*======================================================================================================*/
@@ -745,18 +749,18 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
 /* TABLET PORTRAIT SECOND DIVIDER AND BOTTOM SECTION ==========================================================================================*/
 
-    .second-divider {
-        margin-top: 5%;
-    }
+    /* .second-divider {
+        margin-top: 2rem;
+    } */
 
 
     .about-title {
         margin-top: 2rem;
-        margin-bottom: 0;
+        /* margin-bottom: 2rem; */
     }
 
     .side-links {
-        padding-bottom: 30%;
+        /* padding-bottom: 30%; */
     }
 
 /*======================================================================================================*/
@@ -889,7 +893,8 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 /* TABLET LANDSCAPE BOTTOM SECTION ==========================================================================================*/
 
 .second-divider {
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    margin-top: 2rem;
 }
 
 .bottom-div {
@@ -921,13 +926,13 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
     .top-name {
         font-size: 5rem;
-        padding-top: 30%;
+        padding-top: 50%;
     }
 
 /* DESKTOP FIRST DIVIDER ==========================================================================================*/
 
     .top-greeting {
-        padding-top: 15%;
+        padding-top: 4.5rem;
     }
 
 /* ==========================================================================================*/
