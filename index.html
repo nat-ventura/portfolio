@@ -19,16 +19,16 @@
                     
                     <div class="nav__list" role="menubar">
                         <div class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                         </div>
                         <div class="nav__item">
-                        <a href="#" class="nav__link">About</a>
+                        <a href="#about-me" class="nav__link">About</a>
                         </div>
                         <div class="nav__item">
-                        <a href="#" class="nav__link">Projects</a>
+                        <a href="#projects" class="nav__link">Projects</a>
                         </div>
                         <div class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                         </div>
                     </div>
 
@@ -37,7 +37,7 @@
                     </div>
                 </nav>
 
-        <div class="flower-container">
+        <div class="flower-container" id="home">
             <div class="white-screen">
                 <div class="top-name">Nat Ventura</div>
             </div>
@@ -54,7 +54,7 @@
             </div>
 
                 <div class="middle-container">
-                    <div class="project-container">
+                    <div class="project-container" id="projects">
                                  
 
                         <!-- AIRSPACE -->
@@ -159,16 +159,28 @@
                     </div>
 
                 <!-- second divider -->
-                <div class="blue-divider"></div>
+                <div class="blue-divider second-divider"></div>
                 <div class="bottom-div">
-                    <div class="about-title">About Me</div>
-                    <div class="link-and-greet">
+                    <div class="about-title" id="about-me">About Me</div>
+                    <div class="link-and-greet" id="contact">
                             <div class="side-links">
-                                <a href="https://github.com/nat-ventura" target="_blank"><img src="icons/github.png" alt="github icon"></a>
-                                <a href="https://www.linkedin.com/in/nat-ventura/" target="_blank"><img src="icons/linkedin.png" alt="linkedin icon"></a>
-                                <a href="https://medium.com/@nat_ventura" target="_blank"><img src="icons/medium.png" alt="medium icon"></a>
-                                <a href="images/nat-ventura-res-2017.pdf" target="_blank"><img src="icons/resume.png" alt="resume icon"></a>
-                            </div>
+                                <div class="tooltip">
+                                    <a href="https://github.com/nat-ventura" target="_blank"><img src="icons/github.png" alt="github icon"></a>
+                                    <span class="tooltiptext tooltip-left">GitHub</span>
+                                </div>
+                                <div class="tooltip">
+                                    <a href="https://www.linkedin.com/in/nat-ventura/" target="_blank"><img src="icons/linkedin.png" alt="linkedin icon"></a>
+                                    <span class="tooltiptext tooltip-left">LinkedIn</span>
+                                </div>
+                                <div class="tooltip">
+                                    <a href="https://medium.com/@nat_ventura" target="_blank"><img src="icons/medium.png" alt="medium icon"></a>
+                                    <span class="tooltiptext tooltip-left">Medium</span>
+                                </div>
+                                <div class="tooltip">
+                                    <a href="images/nat-ventura-res-2017.pdf" target="_blank"><img src="icons/resume.png" alt="resume icon"></a>
+                                    <span class="tooltiptext tooltip-left">Resume</span>
+                                </div>
+                                </div>
                             <div class="about-me">
                                     During my last year at Oberlin College, I discovered my love for computer science and creative programming.
                                     <br><br>

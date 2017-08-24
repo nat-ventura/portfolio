@@ -61,9 +61,9 @@ a {
 
 .nav__list {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 4rem;
-    width: 100%;
+    width: 25%;
     height: 0;
     padding: 0;
     margin: 0;
@@ -116,7 +116,7 @@ a {
 }
 
 .nav--opened {
-    background-color: rgba(0,0,0,.85);
+    /* background-color: rgba(0,0,0,.85); */
 }
 
 .nav--opened .nav__burger:before {
@@ -577,7 +577,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     display: flex;
     flex-direction: column;
     padding-bottom: 90%;
-    margin-left: 10%;
+    margin-left: 20%;
     /* margin-left: auto; */
 }
 
@@ -620,7 +620,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 }
 
 .top-container {
-    padding-top: 30%;
+    /* padding-top: 30%; */
 }
 
 /*======================================================================================================*/
@@ -691,7 +691,8 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 .flower {
     top: 15%;
     left: 5%;
-    height: 70%;
+    height: 40rem;
+    width: unset;
 }
 
 .top-name {
@@ -712,6 +713,14 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
         height: 300px;
         font-size: 2rem;
         /* align-self: left; */
+    }
+
+    .blue-divider {
+        height: 25rem;
+    }
+
+    .second-divider {
+        height: 6rem;
     }
 
 /*======================================================================================================*/
@@ -742,7 +751,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 
 
     .about-title {
-        margin-top: 10%;
+        margin-top: 2rem;
         margin-bottom: 0;
     }
 
@@ -778,7 +787,7 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 /* TABLET LANDSCAPE FIRST DIVIDER ==========================================================================================*/
 
     .top-greeting {
-        padding-top: 25%;
+        padding-top: 6rem;
         margin-top: 5%;
         margin-bottom: 10%;
         height: 350px;
