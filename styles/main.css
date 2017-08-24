@@ -37,7 +37,7 @@ a {
     top: 0;
     width: 100%;
     height: 4rem;
-    z-index: 100;
+    z-index: 200;
 }
 
 .nav__container {
@@ -253,34 +253,141 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     align-items: center;
 }
 
-.project {
-    margin-top: 2rem;
-    height: 20rem;
-}
-
 .overlay {
     height: 100%;
+    z-index: 100;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.6rem;
+}
+
+.built {
+    margin-top: 0;
+    font-size: 1rem;
+    /* margin-bottom: .5rem; */
+
+}
+
+.techs svg {
+    height: 2.7rem;
+}
+
+.techs .handlebars {
+    height: unset;
+    width: 50px;
+    margin-bottom: 1.2rem;
+}
+
+.top-row {
+
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* z-index: 300000; */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.tooltip-left {
+    /* Position the tooltip text */
+    position: absolute;
     z-index: 200;
-    transition: all 0.7s ease;
-    padding-top: 40px;
+    top: -5px;
+    right: 125%;
+}
+
+.tooltip-right {
+    position: absolute;
+    z-index: 200;
+    top: -5px;
+    left: 125%;
+}
+
+.tooltip-bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+/* Tooltip arrow */
+.tooltip .tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#airbox {
+    display: none;
 }
 
 .project {
     width: 20rem;
     height: 20rem;
     overflow: hidden;
-	margin: 5px;
 	text-align: center;
 	position: relative;
 }
 
-.no-touchevents .project:hover .overlay,
+.no-touchevents .project:hover .overlay:hover,
 .project:hover .overlay {
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.9);
     opacity: 0.9;
     top: 0;
 }
@@ -290,17 +397,29 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
 } */
 
 .overlay p,
-.overlay h3,
 .project a {
 	color: black;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .overlay h3 {
-    font-size: 1.2rem;
+    color: black;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
 }
+
+.api {
+    margin: .5rem;
+    font-size: .8rem;
+}
+
+/* .overlay p {
+    margin: 0;
+} */
 
 .overlay button {
     color: black;
@@ -309,6 +428,8 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     letter-spacing: 0.05em;
     background: black;
     color: white;
+    font-size: 1rem;
+    width: 6rem;
 }
 
 .overlay button:hover {
@@ -326,6 +447,19 @@ transform: translate3d(0, -6px, 0) rotate(45deg);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.proj-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#airdesc, #biodesc {
+    font-size: 1rem;
 }
 
 /* BIOLINGUAL ----------------------- */
