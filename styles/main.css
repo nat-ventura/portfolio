@@ -37,7 +37,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    top: 0;
+    bottom: 0;
     width: 100%;
     height: 4rem;
     background-color: #191919;
@@ -91,12 +91,12 @@ a {
 /* NO QUERY TOP HEADER ==========================================================================================*/
 
 .top-name {
-    padding-top: 12.3rem;
+    padding-top: 14rem;
     padding-left: 1.5rem;
     position: relative;
     z-index: 3;
-    font-size: 2.8rem;
-    color: rgba(0,0,0,.4);
+    font-size: 2.5rem;
+    color: rgba(0,0,0,.45);
     letter-spacing: 2px;
 }
 
@@ -124,6 +124,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 /*======================================================================================================*/
@@ -131,23 +133,33 @@ a {
 /* NO QUERY FIRST DIVIDER ==========================================================================================*/
 
 .blue-divider {
+    /* margin-top: 10rem; */
     width: 100%;
-    height: 16rem;
+    height: 40rem;
     background: url("../images/bluuuecopycopycopy.jpeg") no-repeat center bottom;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.top-greeting {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+}
+
+.top-greeting {
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
     width: 100%;
-    padding-top: 5rem;
-    padding-left: 2rem;
-    font-size: 1.5rem;
+    padding: 3rem;
+    text-align: left;
+    /* padding-top: 13rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding: 13rem 1.5rem 1.5rem 1.5rem; */
+    font-size: 1.9rem;
     font-weight: bold;
     color: rgba(255,255,255,.9);
     letter-spacing: 2px;
@@ -155,21 +167,8 @@ a {
 
 /*==========================================================================================================*/
 
-/* SECOND DIVIDER ==========================================================================================*/
 
-.second-divider {
-    height: 20rem;
-    width: 100%;
-    background: url("../images/bluuuecopycopycopy.jpeg") no-repeat center bottom;
-    padding-top: 35%;
-    padding-bottom: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 2rem;
-}
-/*==========================================================================================================*/
-
-/* PROJECTS SECTION ========================================================================================*/
+/* NO QUERY PROJECTS SECTION ========================================================================================*/
 
 .middle-container {
     display: flex;
@@ -181,6 +180,7 @@ a {
     font-size: 2.8rem;
     color: rgba(0,0,0,.4);
     /* display: none; */
+    padding-top: 0;
 }
 
 .project-title {
@@ -190,11 +190,13 @@ a {
     /* margin-top: 20%; */
     /* padding-left: 5%; */
     padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
     justify-content: center;
     font-size: 2.8rem;
-    color: rgba(0,0,0,.4);
+    /* color: rgba(0,0,0,.4); */
+    color: #191919;
 }
 
 .project-container {
@@ -205,6 +207,9 @@ a {
 
 .overlay {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -217,10 +222,6 @@ a {
     top: 0;
     /* display: none; */
 }
-
-
-
-
 
 .no-touchevents .project:hover .overlay:hover,
 .project:hover .overlay {
@@ -262,6 +263,10 @@ a {
     justify-content: center;
 }
 
+.button-row button {
+    margin: 1rem;
+}
+
 /* Tooltip container */
 .tooltip {
     position: relative;
@@ -271,13 +276,13 @@ a {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
+    /* visibility: hidden; */
     background-color: #555;
     color: #fff;
     text-align: center;
     padding: .5rem;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: .8rem;
 
     /* Fade in tooltip */
     opacity: 0;
@@ -288,14 +293,14 @@ a {
     /* Position the tooltip text */
     position: absolute;
     z-index: 200;
-    top: -5px;
+    top: 5px;
     right: 125%;
 }
 
 .tooltip-right {
     position: absolute;
     z-index: 200;
-    top: -5px;
+    top: 5px;
     left: 125%;
 }
 
@@ -306,6 +311,11 @@ a {
     margin-left: -2.3rem;
     /* z-index: 300; */
     
+}
+
+.tooltip-top {
+    position: absolute;
+    top: 0;
 }
 
 
@@ -392,7 +402,8 @@ a {
     margin: 0;
 } */
 
-.overlay button {
+.overlay button, .proj-button {
+    display: inline-block;
     color: black;
     padding: 1rem;
     border: none;
@@ -403,7 +414,7 @@ a {
     width: 6rem;
 }
 
-.overlay button:hover {
+.overlay button:hover, .proj-button:hover {
 	transition: all 0.7s ease;
 	background: #7c7e82;
 }
@@ -432,6 +443,7 @@ a {
 #airdesc, #biodesc {
     font-size: 1rem;
     padding: 5% 10% 5% 10%;
+    color: black;
 }
 
 /* BIOLINGUAL ----------------------- */
@@ -453,6 +465,20 @@ a {
 .biolingual img {
     height: 40px;
 }
+
+/* .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+} */
 
 /* ----------------------------------- */
 
@@ -519,7 +545,27 @@ a {
 
 /*==========================================================================================================*/
 
+
+/* SECOND DIVIDER ==========================================================================================*/
+
+.second-divider {
+    height: 20rem;
+    width: 100%;
+    background: url("../images/bluuuecopycopycopy.jpeg") no-repeat center bottom;
+    padding-top: 35%;
+    padding-bottom: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 2rem;
+}
+/*==========================================================================================================*/
+
+
 /* BOTTOM SECTION ========================================================================================*/
+
+.bottom-container {
+    padding-bottom: 4rem;
+}
 
 .about-title {
     display: flex;
