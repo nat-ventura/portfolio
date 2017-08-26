@@ -62,6 +62,10 @@ a {
     height: 3.75rem;
 }
 
+.nav-link svg {
+    color: white;
+}
+
 .nav-link {
     padding: 0 1.9rem;
     /* padding-top: 1rem; */
