@@ -41,7 +41,7 @@ a {
     width: 100%;
     height: 4rem;
     background-color: #191919;
-    z-index: 200;
+    z-index: 9999900;
   }
   
 .nav-container {
@@ -262,30 +262,30 @@ a {
 }
 
 /* Tooltip container */
-.tooltip {
+/* .tooltip {
     position: relative;
-    display: inline-block;
+    display: inline-block; */
     /* z-index: 300000; */
-}
+/* } */
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+/* .tooltip .tooltiptext { */
     /* visibility: hidden; */
-    background-color: #555;
+    /* background-color: #555;
     color: #fff;
     text-align: center;
     padding: .5rem;
     border-radius: 6px;
-    font-size: .8rem;
+    font-size: .8rem; */
 
     /* Fade in tooltip */
-    opacity: 0;
+    /* opacity: 0;
     transition: opacity .4s;
 }
 
-.tooltip-left {
+.tooltip-left { */
     /* Position the tooltip text */
-    position: absolute;
+    /* position: absolute;
     z-index: 200;
     top: 5px;
     right: 125%;
@@ -299,20 +299,20 @@ a {
 }
 
 .tooltip-bottom {
-    position: absolute;
+    position: absolute; */
     /* top: 90%; */
-    left: 50%;
-    margin-left: -2.3rem;
+    /* left: 50%;
+    margin-left: -2.3rem; */
     /* z-index: 300; */
-}
+/* }
 
 .tooltip-top {
     position: absolute;
     top: 0;
-}
+} */
 
 /* Tooltip arrow */
-.tooltip .tooltip-left::after {
+/* .tooltip .tooltip-left::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -343,13 +343,13 @@ a {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent #555 transparent;
-}
+} */
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+/* .tooltip .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 #airbox {
     display: none;
@@ -523,9 +523,15 @@ h4.project-title {
     color: black;
 }
 
-.mini-skill-item:hover {
+.mini-skill-item:hover svg {
     transform: scale(1.1);
   }
+
+.mini-skill-item svg {
+    transition: all .3s ease;
+    transform-origin: 50% 50%;
+    padding-bottom: .4rem;
+}
 
 .mini-skill-item {
     display: flex;
@@ -535,8 +541,7 @@ h4.project-title {
     /* padding: .6rem; */
     text-align: center;
     /* width: 4.2rem; */
-    transition: all .3s ease;
-    transform-origin: 50% 50%;
+
 }
 
 .mini-skill-item p {
@@ -662,9 +667,20 @@ h4.project-title {
 }
 
 .skill-item:focus svg,
-.skill-item:hover svg {
+.skill-item:hover svg,
+.skill-item:active svg {
     transform: scale(1.2);
   }
+
+  /* .skill-item:focus p,
+  .skill-item:hover p,
+  .skill-item:active p {
+      font-weight: bold;
+  } */
+
+/* .skill-item:active p {
+    font-weight: bold;
+} */
 
   .skill-item svg {
     transition: all .3s ease;
@@ -681,7 +697,13 @@ h4.project-title {
     width: 4.5rem;
 }
 
-
+.jBox-content {
+    background-color: black;
+    color: #F1F1F1;
+    padding: 1rem;
+    font-size: .8rem;
+    /* border-radius: 1rem; */
+}
 
 
 
@@ -774,7 +796,14 @@ h4.project-title {
     color: rgba(0,0,0,.6);
     font-size: .8rem;
     margin-top: 3px;
+    /* opacity: 0; */
 }
+/* 
+.contact-item:hover p,
+.contact-item:focus p {
+    opacity: 1;
+    transition: opacity .7s ease;
+} */
 
 .side-links img {
     /* height: 40px; */
