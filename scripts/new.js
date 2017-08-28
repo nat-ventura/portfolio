@@ -8,8 +8,8 @@
 $(document).ready( () => {
 
     $('.skill-item').click(function (item) {
-      $(this).parent('.skills-box').children('.row').css('font-weight', 'normal');
-      $(this).siblings('.skill-item').css('font-weight', 'normal');
+      // $(this).parent('.skills-box').children('.row').css('font-weight', 'normal');
+      $('.skill-item').css('font-weight', 'normal');
       $(this).css('font-weight', 'bold');
     });
 
@@ -17,9 +17,11 @@ $(document).ready( () => {
       var filtered = $('.flower').css('filter')
       if (filtered == 'none') {
         $('.flower').css('filter', 'invert(1)')
+        // $('.flower').css('height', '50rem')
       }
       if (filtered == 'invert(1)') {
         $('.flower').css('filter', 'none')
+        // $('.flower').css('height', '40rem')
       }
     });
 });
