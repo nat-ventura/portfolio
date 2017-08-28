@@ -523,6 +523,10 @@ h4.project-title {
     color: black;
 }
 
+.mini-skill-item:hover {
+    transform: scale(1.1);
+  }
+
 .mini-skill-item {
     display: flex;
     flex-direction: column;
@@ -531,17 +535,26 @@ h4.project-title {
     /* padding: .6rem; */
     text-align: center;
     /* width: 4.2rem; */
+    transition: all .3s ease;
+    transform-origin: 50% 50%;
 }
 
 .mini-skill-item p {
     margin-bottom: 0;
-    margin-top: .5rem;
+    margin-top: .1rem;
     color: rgba(0,0,0,.5);
-    font-size: .6rem;
+    font-size: .7rem;
+    opacity: 0;
+}
+
+.mini-skill-item:hover p,
+.mini-skill-item:focus p {
+    opacity: 1;
+    transition: opacity .7s ease;
 }
 
 .mini-skill-item p.illustrator {
-    font-size: .45rem;
+    font-size: .6rem;
 }
 
 /* BIOLINGUAL ----------------------- */
@@ -648,7 +661,17 @@ h4.project-title {
 
 }
 
-.skill-item {
+.skill-item:focus svg,
+.skill-item:hover svg {
+    transform: scale(1.2);
+  }
+
+  .skill-item svg {
+    transition: all .3s ease;
+    transform-origin: 50% 50%;
+}
+
+  .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -657,6 +680,10 @@ h4.project-title {
     text-align: center;
     width: 4.5rem;
 }
+
+
+
+
 
 /* ----------------------------------- */
 
@@ -717,6 +744,15 @@ h4.project-title {
     justify-content: flex-start;
     /* margin-left: 20%; */
     /* margin-left: auto; */
+}
+
+.contact-item:hover a {
+    transform: scale(1.1);
+}
+
+.contact-item a {
+    transition: all .3s ease;
+    transform-origin: 50% 50%;
 }
 
 .contact-item {
