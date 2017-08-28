@@ -621,18 +621,27 @@ h4.project-title {
 
 /* NO QUERY WRITING----------------------------------- */
 
-h4.what-do {
+.story1 h4.what-do {
     font-size: 1rem;
     color: black;
     padding: 1rem;
     margin: 0;
+    /* margin-top: 2rem; */
 }
 
-.story1 p {
+.story2 h4.what-do {
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.story1 p, .story2 p {
     font-size: .8rem;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-decoration: none;
 }
 
@@ -644,8 +653,7 @@ h3.writing-title {
     display: flex;
     width: 100%;
     padding: 0;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     justify-content: center;
 
     color: #191919;
@@ -661,6 +669,10 @@ h3.writing-title {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.writing-wrapper {
+    margin-bottom: 3rem;
 }
 
 /*==========================================================================================================*/
@@ -987,6 +999,7 @@ h3.writing-title {
 
 .middle-container {
     padding: 5rem 0;
+    padding-bottom: 6rem;
 }
 
 .project-title {
