@@ -114,7 +114,7 @@ a {
 .white-screen {
     background-color: rgba(255,255,255,.9);
     position: absolute;
-    height: 100%;
+    height: 110%;
     width: 100%;
     /* border: 10px solid red; */
     z-index: 2;
@@ -260,96 +260,6 @@ a {
 .button-row button {
     margin: 1rem;
 }
-
-/* Tooltip container */
-/* .tooltip {
-    position: relative;
-    display: inline-block; */
-    /* z-index: 300000; */
-/* } */
-
-/* Tooltip text */
-/* .tooltip .tooltiptext { */
-    /* visibility: hidden; */
-    /* background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: .5rem;
-    border-radius: 6px;
-    font-size: .8rem; */
-
-    /* Fade in tooltip */
-    /* opacity: 0;
-    transition: opacity .4s;
-}
-
-.tooltip-left { */
-    /* Position the tooltip text */
-    /* position: absolute;
-    z-index: 200;
-    top: 5px;
-    right: 125%;
-}
-
-.tooltip-right {
-    position: absolute;
-    z-index: 200;
-    top: 5px;
-    left: 125%;
-}
-
-.tooltip-bottom {
-    position: absolute; */
-    /* top: 90%; */
-    /* left: 50%;
-    margin-left: -2.3rem; */
-    /* z-index: 300; */
-/* }
-
-.tooltip-top {
-    position: absolute;
-    top: 0;
-} */
-
-/* Tooltip arrow */
-/* .tooltip .tooltip-left::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent #555;
-}
-
-.tooltip-right::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent #555 transparent transparent;
-}
-
-.tooltip-bottom::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #555 transparent;
-} */
-
-/* Show the tooltip text when you mouse over the tooltip container */
-/* .tooltip .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-} */
 
 #airbox {
     display: none;
@@ -708,6 +618,50 @@ h4.project-title {
 
 
 /* ----------------------------------- */
+
+/* NO QUERY WRITING----------------------------------- */
+
+h4.what-do {
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    margin: 0;
+}
+
+.story1 p {
+    font-size: .8rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+}
+
+.story1 a {
+    color: darkslategray;
+}
+
+h3.writing-title {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+
+    color: #191919;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.story-pic {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 /*==========================================================================================================*/
 
