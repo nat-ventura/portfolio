@@ -1,27 +1,27 @@
-function toggle(elementID) {
-  var elementCSS = $(elementID).css('display');
-  console.log(elementCSS);
-  if (elementCSS == 'none') {
-      $(elementID).css('display', 'block')
-  } else {
-      $(elementID).css('display', 'none')
-  }
-}
+// function toggle(elementID) {
+//   var elementCSS = $(elementID.css('filter')
+//   if (elementCSS == 'invert(1)') {
+
+//   }
+// }
 
 $(document).ready( () => {
-  // for (var i in skills) {
-    
-    // $('.skill-item').on('click', (event) => {
-    //   var select = event.currentTarget.children[1].textContent
-    //   return '<b>' + select + '</b>';
-    // });
 
     $('.skill-item').click(function (item) {
       $(this).parent('.skills-box').children('.row').css('font-weight', 'normal');
       $(this).siblings('.skill-item').css('font-weight', 'normal');
       $(this).css('font-weight', 'bold');
     });
-  // };
+
+    $('.flower-container').click( () => {
+      var filtered = $('.flower').css('filter')
+      if (filtered == 'none') {
+        $('.flower').css('filter', 'invert(1)')
+      }
+      if (filtered == 'invert(1)') {
+        $('.flower').css('filter', 'none')
+      }
+    });
 });
 
 new jBox('Tooltip', {
