@@ -468,6 +468,7 @@ h4.project-title {
     padding: .6rem;
     text-align: center;
     width: 4.5rem;
+    color: #191919;
 }
 
 svg.react {
@@ -930,7 +931,7 @@ p.desc {
 
 .skill-item p {
     font-size: .9rem;
-    color: #191919;
+
 }
 
 .jBox-content {
