@@ -42,7 +42,7 @@ a {
     background-color: white;
     /* background-color: white; */
     z-index: 9999900;
-    border-top: 1px dashed black;
+    border-top: 1px solid black;
   }
   
 .nav-container {
@@ -97,7 +97,7 @@ a {
 /* NO QUERY TOP HEADER ==========================================================================================*/
 
 .top-name {
-    padding-top: 68%;
+    padding-top: 66%;
     padding-left: 1.2rem;
     position: relative;
     z-index: 1;
@@ -536,7 +536,7 @@ h4.what-do {
 
 .story1 p, .story2 p {
     font-size: .8rem;
-    width: 90%;
+    width: 100%;
     /* padding-left: 1rem; */
     /* padding-right: 1rem; */
     text-decoration: none;
@@ -567,9 +567,9 @@ h3.writing-title {
 }
 
 .story-pic {
-    width: 90%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
 }
 
 .writing-wrapper {
@@ -579,6 +579,14 @@ h3.writing-title {
     justify-content: center;
     width: 100%;
     margin-bottom: 3rem;
+}
+
+.writing-content-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 p.read:hover {
@@ -722,6 +730,10 @@ p.read {
     padding-top: 0;
 }
 
+.email {
+    color: #0053FF;
+}
+
 .footer {
     font-size: .8rem;
 }
@@ -733,7 +745,7 @@ p.read {
 @media only screen and (min-width : 360px) {
 
     .top-name {
-        padding-top: 68%;
+        padding-top: 62%;
     }
 
     .top-greeting {
@@ -880,7 +892,7 @@ p.read {
     height: 4rem;
     top: 0;
     border-top: unset;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
 
 }
 
@@ -929,8 +941,8 @@ h4.project-title {
 }
 
 .fave-project {
-    width: 25rem;
-    height: 25rem;
+    width: 18rem;
+    height: 18rem;
 }
 
 .skills-title {
@@ -957,7 +969,7 @@ h3.writing-title {
 }
 
 .writing-wrapper {
-    width: 80%;
+    width: 100%;
 }
 
 .story1 h4.what-do,
@@ -1145,7 +1157,7 @@ p.desc {
     .about-me {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         }
 
