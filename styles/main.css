@@ -39,9 +39,10 @@ a {
     bottom: 0;
     width: 100%;
     height: 4rem;
-    background-color: #191919;
+    background-color: white;
     /* background-color: white; */
     z-index: 9999900;
+    border-top: 1px dashed black;
   }
   
 .nav-container {
@@ -70,11 +71,12 @@ a {
 .nav-link {
     padding: 0 1.9rem;
     transition: color 150ms ease-out;
-    color: #eee;
+    /* color: #00cbff; */
+    color: #0090ff;
 }
 
 .nav-link:hover {
-    color: #2AA3BF;
+    color: red;
 }
 
 /*======================================================================================================*/
@@ -119,9 +121,10 @@ a {
     /* background-color: rgba(255, 162, 219, 0.91); */
     /* background-color: rgba(67, 245, 255, 0.91); */
     position: absolute;
-    height: 110%;
+    height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
+    border-bottom: 1px dashed black;
 }
 
 .flower-container {
@@ -155,14 +158,17 @@ a {
 }
 
 .top-greeting {
-    width: 100%;
-    padding: 3rem;
+    width: 80%;
     padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: left;
     font-size: 1.9rem;
     font-weight: bold;
-    color: rgba(255,255,255,.9);
+    /* color: rgba(255,255,255,.9); */
+    color: black;
     letter-spacing: 2px;
+    /* border-top: 1px dashed black; */
+    /* border-bottom: 1px dashed black; */
 }
 
 /*==========================================================================================================*/
@@ -179,6 +185,7 @@ a {
     font-size: 2.8rem;
     color: rgba(0,0,0,.4);
     padding-top: 0;
+    border-bottom: 1px dashed black;
 }
 
 .project-title {
@@ -196,6 +203,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed black;
+    border-top: 1px dashed black;
+    
+    padding-top: 1rem;
 }
 
 .overlay {
@@ -269,6 +281,8 @@ h4.project-title {
     margin-top: 3rem;
     text-align: center;
     margin-bottom: 1rem;
+    padding-top: 2rem;
+    border-top: 1px dashed black;
 }
 
 .mini-skills {
@@ -482,44 +496,64 @@ svg.react {
     font-size: .8rem;
 }
 
+/* p.desc {
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 2rem;
+} */
+
 /* ----------------------------------- */
 
 /* NO QUERY WRITING----------------------------------- */
 
-.story1 h4.what-do {
+.story1, .story2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h4.what-do {
     font-size: 1rem;
     color: black;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0;
+    /* width: 90%; */
+    /* text-align: center; */
+    align-self: center;
     /* margin-top: 2rem; */
 }
 
 .story2 h4.what-do {
     font-size: 1rem;
     color: black;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin: 0;
     margin-top: 2rem;
 }
 
 .story1 p, .story2 p {
     font-size: .8rem;
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
     text-decoration: none;
     color: #191919;
+    align-self: center;
 }
 
 .story1 a, .story2 a {
-    color: darkslategray;
+    /* color: darkslategray; */
+    color: #82a0ea;
 }
 
 h3.writing-title {
     display: flex;
     width: 100%;
     padding: 0;
-    margin-top: 2rem;
+    padding-top: 2rem;
     justify-content: center;
 
     color: #191919;
@@ -529,16 +563,33 @@ h3.writing-title {
     margin-top: 3rem;
     text-align: center;
     margin-bottom: 1rem;
+    border-top: 1px dashed black;
 }
 
 .story-pic {
-    width: 100%;
+    width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 .writing-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 3rem;
+}
+
+p.read:hover {
+    transform: scale(1.2);
+}
+
+p.read {
+    margin: 0;
+    transition: all .3s ease;
+    transform-origin: 50% 50%;
+    color: #82a0ea;
 }
 
 /*==========================================================================================================*/
@@ -555,6 +606,7 @@ h3.writing-title {
     background-attachment: fixed;
     margin-top: 2rem;
 }
+  
 
 /*==========================================================================================================*/
 
@@ -574,20 +626,22 @@ h3.writing-title {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 2rem;
 }
 
 .about-title {
     display: flex;
-    width: 100%;
+    width: 70%;
     padding-bottom: 2rem;
     margin-top: 1rem;
     justify-content: center;
     font-size: 2.25rem;
     color: #191919;
     font-weight: bold;
+    /* border-top: 1px dashed black; */
+    padding-top: 4rem;
 }
 
 .about-me p {
@@ -614,7 +668,7 @@ h3.writing-title {
     flex-direction: column;
     align-items: flex-end;
     width: 30%;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     justify-content: flex-start;
 }
 
@@ -664,6 +718,12 @@ h3.writing-title {
     font-size: .8rem;
     letter-spacing: 1px;
     padding: 2rem;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.footer {
+    font-size: .8rem;
 }
 
 /*=========================================================================================================*/
@@ -678,6 +738,7 @@ h3.writing-title {
 
     .top-greeting {
         font-size: 2.3rem;
+        color: black;
     }
 
     .project-container {
@@ -793,13 +854,13 @@ h3.writing-title {
 .flower {
     top: 15%;
     left: 5%;
-    height: 40rem;
+    /* height: 40rem; */
     width: unset;
 }
 
 .top-name {
-    font-size: 4rem;
-    padding-top: 15.5rem;
+    font-size: 3rem;
+    padding-top: 14rem;
     margin-bottom: 30%;
 }
 
@@ -809,12 +870,18 @@ h3.writing-title {
 
 .top-greeting {
     padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 80%;
 }
 
 .nav {
     height: 4rem;
     top: 0;
+    border-top: unset;
+    border-bottom: 1px dashed black;
+
 }
 
 .nav-item {
@@ -852,14 +919,18 @@ h3.project-title {
 }
 
 h4.project-title {
+
+
     margin-top: 5.5rem;
     font-size: 2.8rem;
     padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 .fave-project {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
 }
 
 .skills-title {
@@ -881,7 +952,8 @@ h4.project-title {
 h3.writing-title {
     font-size: 3rem;
     padding-top: 5rem;
-    margin-top: 0;
+    /* margin-top: 0; */
+    
 }
 
 .writing-wrapper {
@@ -898,9 +970,9 @@ h3.writing-title {
     font-size: 1rem;
 }
 
-.story1 p {
+/* .story1 p {
     margin-bottom: 5rem;
-}
+} */
 
 .mini-skills svg {
     width: 4rem;
@@ -926,7 +998,8 @@ h3.writing-title {
 
 p.desc {
     font-size: 1rem;
-    padding-top: 0;
+    /* border: 1px solid black; */
+    /* padding: 2rem; */
 }
 
 .skill-item p {
@@ -1046,7 +1119,11 @@ p.desc {
     }
 
     .top-name {
-        padding-top: 21rem;
+        /* padding-top: 29%; */
+    }
+
+    .top-greeting {
+        width: 60%;
     }
 
     p.desc {
@@ -1073,8 +1150,8 @@ p.desc {
         }
 
     .my-pic-holder img {
-        width: 23rem;
-        height: 23rem;
+        width: 18rem;
+        height: 18rem;
         /* align-self: center; */
     }
 
