@@ -136,7 +136,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 
 /*======================================================================================================*/
@@ -159,8 +159,8 @@ a {
 
 .top-greeting {
     width: 80%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
     text-align: left;
     font-size: 1.9rem;
     font-weight: bold;
@@ -224,12 +224,6 @@ a {
     padding-top: 1.6rem;
     opacity: 0;
     top: 0;
-}
-
-.no-touchevents .project:hover .overlay:hover,
-.project:hover .overlay {
-	background: rgba(255,255,255,0.9);
-    opacity: 0.9;
 }
 
 .built {
@@ -387,7 +381,9 @@ h4.project-title {
     margin-bottom: 2rem;
 }
 
-.mini-skill-item:hover svg {
+.mini-skill-item:hover svg,
+.mini-skill-item:focus svg,
+.mini-skill-item:active {
     transform: scale(1.1);
   }
 
@@ -589,7 +585,9 @@ h3.writing-title {
     justify-content: center;
 }
 
-p.read:hover {
+p.read:hover,
+p.read:active,
+p.read:focus {
     transform: scale(1.2);
 }
 
@@ -745,7 +743,7 @@ p.read {
 @media only screen and (min-width : 360px) {
 
     .top-name {
-        padding-top: 62%;
+        padding-top: 66%;
     }
 
     .top-greeting {
@@ -868,11 +866,12 @@ p.read {
     left: 5%;
     /* height: 40rem; */
     width: unset;
+    height: 35rem;
 }
 
 .top-name {
     font-size: 3rem;
-    padding-top: 14rem;
+    padding-top: 17rem;
     margin-bottom: 30%;
 }
 
@@ -882,7 +881,7 @@ p.read {
 
 .top-greeting {
     padding: 0;
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
     margin-bottom: 3rem;
     width: 80%;
