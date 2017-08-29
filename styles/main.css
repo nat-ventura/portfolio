@@ -95,7 +95,7 @@ a {
 /* NO QUERY TOP HEADER ==========================================================================================*/
 
 .top-name {
-    padding-top: 12.1rem;
+    padding-top: 68%;
     padding-left: 1.2rem;
     position: relative;
     z-index: 1;
@@ -275,7 +275,7 @@ h4.project-title {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
 }
 
 .mini-skills svg {
@@ -394,7 +394,7 @@ h4.project-title {
 .mini-skill-item p {
     margin-bottom: 0;
     margin-top: .1rem;
-    color: rgba(0,0,0,.5);
+    color: #191919;
     font-size: .7rem;
     opacity: 0;
 }
@@ -468,6 +468,10 @@ h4.project-title {
     padding: .6rem;
     text-align: center;
     width: 4.5rem;
+}
+
+svg.react {
+    color: unset;
 }
 
 .jBox-content {
@@ -565,9 +569,13 @@ h3.writing-title {
 }
 
 .my-pic-holder img {
-    width: 10rem;
-    height: 10rem;
-    /* margin-bottom: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
 }
 
 .about-title {
@@ -581,8 +589,13 @@ h3.writing-title {
     font-weight: bold;
 }
 
-.about-me {
+.about-me p {
     /* padding-top: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #191919;
 }
 
 .link-and-greet {
@@ -598,13 +611,14 @@ h3.writing-title {
 .side-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 40%;
+    align-items: flex-end;
+    width: 30%;
+    padding-right: 2rem;
     justify-content: flex-start;
 }
 
 .contact-item:hover a {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .contact-item a {
@@ -647,8 +661,8 @@ h3.writing-title {
     width: 70%;
     text-align: left;
     font-size: .8rem;
-    color: rgba(0,0,0,.5);
     letter-spacing: 1px;
+    padding: 2rem;
 }
 
 /*=========================================================================================================*/
@@ -658,7 +672,7 @@ h3.writing-title {
 @media only screen and (min-width : 360px) {
 
     .top-name {
-        padding-top: 15.4rem;
+        padding-top: 68%;
     }
 
     .top-greeting {
@@ -792,6 +806,11 @@ h3.writing-title {
     margin-top: 1rem;
 }
 
+.top-greeting {
+    padding: 0;
+    width: 80%;
+}
+
 .nav {
     height: 4rem;
     top: 0;
@@ -822,8 +841,7 @@ h3.writing-title {
 
 
 .project-container {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    width: 80%;
 }
 
 h3.project-title {
@@ -839,8 +857,8 @@ h4.project-title {
 }
 
 .fave-project {
-    width: 22rem;
-    height: 22rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .skills-title {
@@ -848,7 +866,7 @@ h4.project-title {
 }
 
 .skill-wrapper {
-    width: 100%;
+    width: 80%;
 }
 
 .skills-box {
@@ -866,8 +884,7 @@ h3.writing-title {
 }
 
 .writing-wrapper {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    width: 80%;
 }
 
 .story1 h4.what-do,
@@ -907,15 +924,21 @@ h3.writing-title {
 }
 
 p.desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding-top: 0;
 }
 
 .skill-item p {
     font-size: .9rem;
+    color: #191919;
+}
+
+.jBox-content {
+    font-size: 1.2rem;
 }
 
 .about-me {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* padding-top: 1rem; */
 }
 
@@ -932,9 +955,10 @@ p.desc {
 }
 
 .my-pic-holder img {
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 1rem;
+    /* justify-content: flex-start; */
+    /* width: 20rem; */
+    /* height: 20rem; */
+    margin-bottom: 3rem;
 }
 
 .link-and-greet {
@@ -1037,23 +1061,71 @@ p.desc {
     }
 
     h3.skills-title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .about-me {
-        /* font-size: 1.4rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .my-pic-holder img {
+        width: 23rem;
+        height: 23rem;
+        /* align-self: center; */
     }
 
     .contact-item p {
-        font-size: 1.5rem;
+        font-size: .8rem;
         margin-bottom: 1rem;
     }
 
     h4.project-title,
     h3.project-title {
         margin-bottom: 2rem;
+        font-size: 2.5rem;
     }
 
+    .project-container,
+    .skills-wrapper,
+    .writing-wrapper {
+        width: 60%;
+    }
+
+    h3.writing-title {
+        font-size: 2.5rem;
+    }
+
+    .mini-skills svg {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+    .mini-skills svg.handlebars {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .skill-item p {
+        font-size: 1rem;
+    }
+
+    .skill-item {
+        width: 6rem;
+        padding: 1rem;
+    }
+
+    .story1 h4.what-do,
+    .story2 h4.what-do {
+        font-size: 2rem;
+    }
+
+    .story1 p, .story2 p {
+        font-size: 1.2rem;
+    }
 /*======================================================================================================*/
 
 /* TABLET LANDSCAPE FIRST DIVIDER ==========================================================================================*/

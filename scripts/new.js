@@ -17,7 +17,7 @@ $(document).ready( () => {
       var filtered = $('.flower').css('filter')
       if (filtered == 'none') {
         $('.flower').css('filter', 'invert(1)')
-        // $('.flower').css('height', '50rem')
+        // $('.white-screen').css('background-color', 'cyan')
       }
       if (filtered == 'invert(1)') {
         $('.flower').css('filter', 'none')
