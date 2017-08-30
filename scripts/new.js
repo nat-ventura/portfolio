@@ -14,9 +14,24 @@ $(document).ready( () => {
     });
 
     $('.mini-skill-item').mouseover( function (item) {
-      $('.skill-item p').css('opacity', '0');
+      // $('.skill-item p').css('opacity', '0');
       $(this).css('opacity', '1');
     })
+
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+          || location.hostname == this.hostname) {
+  
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+      }
+  });
 
     // $('.contact-item').mouseover ( function (item) {
     //   $(this).css('opacity', '1');
