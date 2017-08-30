@@ -12,6 +12,15 @@ $(document).ready( () => {
       $('.skill-item').css('font-weight', 'normal');
       $(this).css('font-weight', 'bold');
     });
+
+    $('.mini-skill-item').mouseover( function (item) {
+      $('.skill-item p').css('opacity', '0');
+      $(this).css('opacity', '1');
+    })
+
+    // $('.contact-item').mouseover ( function (item) {
+    //   $(this).css('opacity', '1');
+    // });
   });
 
     // $('.flower-container').click( () => {
