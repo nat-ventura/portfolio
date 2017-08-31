@@ -33,6 +33,30 @@ $(document).ready( () => {
       }
   });
 
+  $(function(){
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+        var os = $('.white-screen').offset().top; // pixels to the top of div1
+        var ht = $('.white-screen').height(); // height of div1 in pixels
+        // if you've scrolled further than the top of div1 plus it's height
+        // change the color. either by adding a class or setting a css property
+        if(scroll < os + ht) {
+          $('.nav-title').css('display', 'none');
+        }
+        if(scroll > os + ht) {
+          // console.log($('.nav').css('bottom'));
+          $('.nav-title').css('display', 'unset');
+        }
+        if ($('.nav').css('top') != '0px') {
+          $('.nav-title').css('display', 'none');
+        }
+        // if  {
+        //   $('.nav-title').css('display', 'none');
+        // }
+
+    });
+});
+
     // $('.contact-item').mouseover ( function (item) {
     //   $(this).css('opacity', '1');
     // });
