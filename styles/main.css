@@ -269,6 +269,7 @@ a {
 .overlay:focus {
     opacity: 1;
     background-color: rgba(255,255,255,.8);
+    /* background-image: url("../icons/hostpage.png"); */
 }
 
 .built {
@@ -324,6 +325,21 @@ h4.project-title {
     border-top: 1px dashed black;
 }
 
+.pointer {
+    width: 3.5rem;
+    height: 3.5rem;
+    /* position: absolute; */
+    right: 0;
+    /* left: 1.2rem; */
+    left: 8%;
+    margin-right: 1rem;
+    /* margin-bottom: 4rem; */
+    /* transform: rotate(320deg); */
+    /* right: 3rem; */
+    /* right: 0; */
+    /* top: 0; */
+}
+
 .mini-skills {
     display: flex;
     flex-direction: row;
@@ -373,7 +389,7 @@ h4.project-title {
 
 .access {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -1159,6 +1175,11 @@ h4.project-title {
     margin-top: 5rem;
 }
 
+.pointer {
+    left: 8rem;
+    /* bottom: 1rem; */
+}
+
 .skill-wrapper {
     width: 80%;
 }
@@ -1326,6 +1347,16 @@ p.desc {
 /*======================================================================================================*/
 }
 
+@media only screen and (min-width : 575px) {
+    .skills-title {
+        margin-bottom: 1rem;
+    }
+
+    .pointer {
+        /* left: 11rem; */
+    }
+}
+
 /* ******************************************************************************************************* */
 
 /* TABLET LANDSCAPE MEDIA QUERY **************************************************************************** */
@@ -1410,8 +1441,8 @@ p.desc {
     }
 
     .proj-button {
-        width: 14rem;
-        height: 9rem;
+        width: 9rem;
+        height: 6rem;
         margin: 1.6rem;
     }
 
@@ -1441,6 +1472,22 @@ p.desc {
 
     .story1 p, .story2 p {
         font-size: 1.2rem;
+    }
+
+    .both p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: 0;
+        /* font-weight: bold; */
+        color: rgba(0,0,0,.45);
+    }
+
+
+    .pointer {
+        left: 15rem;
+        /* left: unset; */
+        /* text-align: center; */
     }
 /*======================================================================================================*/
 
