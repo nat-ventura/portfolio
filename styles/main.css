@@ -1392,14 +1392,14 @@ p.desc {
     }
 
     .mini-skills svg {
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 6rem;
     }
 
 
     .mini-skills svg.handlebars {
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     .skill-item p {
