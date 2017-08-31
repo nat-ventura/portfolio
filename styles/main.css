@@ -268,7 +268,7 @@ a {
 .overlay:active,
 .overlay:focus {
     opacity: 1;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.8);
 }
 
 .built {
@@ -1145,8 +1145,15 @@ h4.project-title {
     /* margin-top: 1.6rem; */
     font-size: 1rem;
     width: 7rem;
+    height: 4rem;
+    margin: 1.5rem;
     margin-right: 1rem;
 }
+/* 
+.proj-button .bio {
+    width: 6rem;
+    height: 3rem;
+} */
 
 .skills-title {
     margin-top: 5rem;
@@ -1400,6 +1407,16 @@ p.desc {
     .mini-skills svg {
         width: 6rem;
         height: 6rem;
+    }
+
+    .proj-button {
+        width: 14rem;
+        height: 9rem;
+        margin: 1.6rem;
+    }
+
+    p.live-site {
+        font-size: 1.2rem;
     }
 
 
