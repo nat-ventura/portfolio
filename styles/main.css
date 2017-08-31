@@ -292,7 +292,7 @@ h3.project-title {
 }
 
 h4.project-title {
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 3rem;
@@ -602,7 +602,7 @@ h3.writing-title {
     padding-right: 2rem;
     margin-top: 3rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     border-top: 1px dashed black;
 }
 
@@ -703,10 +703,10 @@ p.read {
 
 .about-me p {
     /* padding-top: 10rem; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     color: #191919;
     /* text-align: center; */
 }
@@ -810,7 +810,7 @@ p.read {
     /* width: 40%; */
     /* text-align: left; */
     font-size: .8rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     /* padding: 2rem; */
     /* padding-right: 0; */
     /* padding-top: 0; */
@@ -828,6 +828,8 @@ p.read {
 }
 
 a.glitch {
+    display: inline;
+    white-space: nowrap;
     color: red;
 }
 
@@ -1126,7 +1128,7 @@ h3.writing-title {
 
 .story1 h4.what-do,
 .story2 h4.what-do {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .story1 p,
@@ -1161,7 +1163,7 @@ h3.writing-title {
 }
 
 p.desc {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* border: 1px solid black; */
     /* padding: 2rem; */
 }
@@ -1176,7 +1178,7 @@ p.desc {
 }
 
 .about-me {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* padding-top: 1rem; */
     width: 100%;
 }
@@ -1307,14 +1309,14 @@ p.desc {
         font-size: 2.5rem;
     }
 
-    .about-me {
+    /* .about-me {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         width: 100%;
         text-align: justify;
-        }
+        } */
 
     .my-pic-holder img {
         width: 20rem;
@@ -1341,7 +1343,7 @@ p.desc {
     }
 
     h3.writing-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .mini-skills svg {
@@ -1366,7 +1368,7 @@ p.desc {
 
     .story1 h4.what-do,
     .story2 h4.what-do {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .story1 p, .story2 p {
