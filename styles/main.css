@@ -115,7 +115,7 @@ a {
 
 .top-name {
     /* padding-top: 66%; */
-    padding-top: 14rem;
+    /* padding-top: 14rem; */
     padding-left: 1.2rem;
     position: relative;
     z-index: 1;
@@ -524,8 +524,12 @@ h4.project-title {
     width: 100%;
     margin-bottom: .5rem;
     justify-content: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #191919;
+}
+
+h3.skills-title .want {
+    font-size: 2rem;
 }
 
 p.know {
