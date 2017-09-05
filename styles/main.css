@@ -1472,7 +1472,8 @@ p.desc {
 
     .skill-item {
         width: 6rem;
-        padding: 1rem;
+        /* padding: 1rem; */
+        margin: .5rem;
     }
 
     .story1 h4.what-do,
