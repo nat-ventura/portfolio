@@ -276,7 +276,7 @@
     
     this._createSVG = function (type, options)
     {
-      var svg = document.createElementNS('http://www.w3.org/2000/svg', type);
+      var svg = document.createElementNS('https://www.w3.org/2000/svg', type);
       jQuery.each(options, function (index, item) {
         svg.setAttribute(item[0], (item[1] || ''));
       });

@@ -1091,7 +1091,8 @@ a.glitch {
     height: 4rem;
     top: 0;
     border-top: unset;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 2px 2px 2px #e6e6e6;
     /* box-shadow: 2px 2px 2px grey; */
 
 }
