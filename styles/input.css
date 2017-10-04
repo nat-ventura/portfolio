@@ -29,15 +29,14 @@ a {
   width: 100%;
   height: 4rem;
   background-color: white;
-  /* background-color: white; */
   z-index: 9999900;
-  border-top: 1px solid rgba(230, 230, 230, 0.7); }
+  border-top: 1px solid rgba(230, 230, 230, 0.7);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
 
 .nav-container {
   display: flex;
   justify-content: flex-end;
-  height: 100%;
-  /* max-width: 50rem; */ }
+  height: 100%; }
 
 .nav-list {
   display: flex;
@@ -85,21 +84,22 @@ a {
   justify-content: center;
   width: 100%;
   z-index: 2; }
+  @media (min-width: 768px) {
+    .top-container {
+      margin-top: 1rem; } }
 
 /*======================================================================================================*/
 /* NO QUERY TOP HEADER ==========================================================================================*/
 .top-name {
-  /* padding-top: 66%; */
-  /* padding-top: 14rem; */
   padding-left: 1.2rem;
   position: relative;
   z-index: 1;
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.45);
-  /* color: rgba(25,25,25,0.9); */
-  /* color: white; */
-  letter-spacing: 2px;
-  /* font-weight: bold; */ }
+  letter-spacing: 2px; }
+  @media (min-width: 320px) {
+    .top-name {
+      padding-top: 69%; } }
 
 .flower {
   width: 100%;
@@ -137,12 +137,9 @@ a {
   padding-bottom: 7rem;
   text-align: left;
   font-size: 1.9rem;
-  font-weight: bold;
-  /* color: rgba(255,255,255,.9); */
   color: black;
   letter-spacing: 2px;
-  /* border-top: 1px dashed black; */
-  /* border-bottom: 1px dashed black; */ }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
 
 .blue-divider {
   width: 100%;
@@ -769,21 +766,6 @@ a.glitch {
 
 /*=========================================================================================================*/
 /* PHONE PORTRAIT MEDIA QUERY **************************************************************************** */
-@media only screen and (min-width: 360px) {
-  .top-name {
-    padding-top: 12rem; }
-
-  .top-greeting {
-    font-size: 2.3rem;
-    /* color: black; */
-    color: white; }
-
-  .project-container {
-    width: 90%; }
-
-  /* lines up about me to be flush with side-links */
-  .about-me {
-    padding-top: 2rem; } }
 /* ******************************************************************************************************* */
 /* PHONE LANDSCAPE MEDIA QUERY **************************************************************************** */
 @media only screen and (min-width: 360px) and (orientation: landscape) {
@@ -812,9 +794,6 @@ a.glitch {
 /* TABLET PORTRAIT MEDIA QUERY **************************************************************************** */
 @media only screen and (min-width: 650px) {
   /* TABLET PORTRAIT TOP HEADER ==========================================================================================*/
-  /* .top-container {
-      padding-top: 0;
-  } */
   .flower {
     top: 15%;
     left: 5%;
@@ -826,9 +805,6 @@ a.glitch {
     font-size: 3rem;
     padding-top: 20rem;
     margin-bottom: 30%; }
-
-  .top-container {
-    margin-top: 1rem; }
 
   .top-greeting {
     padding: 0;
@@ -868,14 +844,12 @@ a.glitch {
   .flower-container {
     width: 100%;
     padding-bottom: 0;
-    padding-top: 0;
-    /* height: 30rem; */ }
+    padding-top: 0; }
 
   .nav-list {
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-    /* padding-left: 3rem; */
     padding-right: 2rem; }
 
   .nav-container {
@@ -896,13 +870,7 @@ a.glitch {
     padding-top: 4rem;
     padding-bottom: 1rem; }
 
-  .fave-project {
-    /* width: 18rem; */
-    /* height: 18rem; */ }
-
   .proj-button {
-    /* margin-top: .8rem; */
-    /* margin-top: 1.6rem; */
     font-size: 1rem;
     width: 7rem;
     height: 4rem;
@@ -913,8 +881,7 @@ a.glitch {
     margin-top: 5rem; }
 
   .pointer {
-    left: 8rem;
-    /* bottom: 1rem; */ }
+    left: 8rem; }
 
   .skill-wrapper {
     width: 80%; }
@@ -941,9 +908,6 @@ a.glitch {
   .story2 p {
     font-size: 1rem; }
 
-  /* .story1 p {
-      margin-bottom: 5rem;
-  } */
   .mini-skills svg {
     width: 4rem;
     height: 4rem; }
@@ -962,9 +926,7 @@ a.glitch {
     font-size: 1rem; }
 
   p.desc {
-    font-size: 1.2rem;
-    /* border: 1px solid black; */
-    /* padding: 2rem; */ }
+    font-size: 1.2rem; }
 
   .skill-item p {
     font-size: .9rem; }
@@ -1106,7 +1068,5 @@ a.glitch {
 
   .pointer {
     left: 15rem; } }
-/* ******************************************************************************************************* */
-/* DESKTOP MEDIA QUERY *********************************************************************************** */
 
 /*# sourceMappingURL=input.css.map */

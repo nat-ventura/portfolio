@@ -13,7 +13,6 @@ $breakpoints: (
 
 // MIXINS // **************************
 // Responsive breakpoint manager
-// @requires $breakpoints located in _variables.scss
 @mixin respond-to($breakpoint) { 
     @if map-has-key($breakpoints, $breakpoint) {
       @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
@@ -48,7 +47,6 @@ html, body {
 a {
     text-decoration: none;
 }
-////////////////////////////////////////
 
 /* NO QUERY MENU =========================================================================*/
 
@@ -62,16 +60,16 @@ a {
     width: 100%;
     height: 4rem;
     background-color: white;
-    /* background-color: white; */
     z-index: 9999900;
     border-top: 1px solid rgba(230, 230, 230, 0.7);
+    font-family: $applefont;
+    // font-weight: none;
   }
   
 .nav-container {
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    /* max-width: 50rem; */
 }
 
 .nav-list {
@@ -129,6 +127,9 @@ a {
     justify-content: center;
     width: 100%;
     z-index: 2;
+    @include respond-to(medium) {
+        margin-top: 1rem;
+    }
 }
 
 /*======================================================================================================*/
@@ -136,17 +137,18 @@ a {
 /* NO QUERY TOP HEADER ==========================================================================================*/
 
 .top-name {
-    /* padding-top: 66%; */
-    /* padding-top: 14rem; */
     padding-left: 1.2rem;
     position: relative;
     z-index: 1;
     font-size: 2.5rem;
     color: rgba(0,0,0,.45);
-    /* color: rgba(25,25,25,0.9); */
-    /* color: white; */
     letter-spacing: 2px;
-    /* font-weight: bold; */
+    @include respond-to(small) {
+        padding-top: 69%;
+    }
+    @include respond-to(medium) {
+
+    }
 }
 
 .flower {
@@ -190,12 +192,9 @@ a {
     padding-bottom: 7rem;
     text-align: left;
     font-size: 1.9rem;
-    font-weight: bold;
-    /* color: rgba(255,255,255,.9); */
     color: black;
     letter-spacing: 2px;
-    /* border-top: 1px dashed black; */
-    /* border-bottom: 1px dashed black; */
+    font-family: $applefont;
 }
 
 .blue-divider {
@@ -936,28 +935,26 @@ a.glitch {
 
 /* PHONE PORTRAIT MEDIA QUERY **************************************************************************** */
 
-@media only screen and (min-width : 360px) {
+// @media only screen and (min-width : 360px) {
 
-    .top-name {
-        padding-top: 12rem;
-    }
+//     .top-name {
+//         padding-top: 12rem;
+//     }
 
-    .top-greeting {
-        font-size: 2.3rem;
-        /* color: black; */
-        color: white;
-    }
+//     .top-greeting {
+//         font-size: 2.3rem;
+//         color: white;
+//     }
 
-    .project-container {
-        width: 90%;
-    }
+//     .project-container {
+//         width: 90%;
+//     }
 
-    /* lines up about me to be flush with side-links */
-    .about-me {
-        padding-top: 2rem;
-    }
+//     .about-me {
+//         padding-top: 2rem;
+//     }
 
-}
+// }
 
 /* ******************************************************************************************************* */
 
@@ -1010,10 +1007,6 @@ a.glitch {
 
 /* TABLET PORTRAIT TOP HEADER ==========================================================================================*/
 
-/* .top-container {
-    padding-top: 0;
-} */
-
 .flower {
     top: 15%;
     left: 5%;
@@ -1026,10 +1019,6 @@ a.glitch {
     font-size: 3rem;
     padding-top: 20rem;
     margin-bottom: 30%;
-}
-
-.top-container {
-    margin-top: 1rem;
 }
 
 .top-greeting {
@@ -1078,22 +1067,18 @@ a.glitch {
     width: 100%;
     padding-bottom: 0;
     padding-top: 0;
-    /* height: 30rem; */
 }
-
 
 .nav-list {
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-    /* padding-left: 3rem; */
     padding-right: 2rem;
 }
 
 .nav-container {
     width: 100%;
 }
-
 
 .project-container {
     width: 80%;
@@ -1106,8 +1091,6 @@ h3.project-title {
 }
 
 h4.project-title {
-
-
     margin-top: 5.5rem;
     font-size: 2.8rem;
     padding: 0;
@@ -1115,14 +1098,7 @@ h4.project-title {
     padding-bottom: 1rem;
 }
 
-.fave-project {
-    /* width: 18rem; */
-    /* height: 18rem; */
-}
-
 .proj-button {
-    /* margin-top: .8rem; */
-    /* margin-top: 1.6rem; */
     font-size: 1rem;
     width: 7rem;
     height: 4rem;
@@ -1136,7 +1112,6 @@ h4.project-title {
 
 .pointer {
     left: 8rem;
-    /* bottom: 1rem; */
 }
 
 .skill-wrapper {
@@ -1172,10 +1147,6 @@ h3.writing-title {
     font-size: 1rem;
 }
 
-/* .story1 p {
-    margin-bottom: 5rem;
-} */
-
 .mini-skills svg {
     width: 4rem;
     height: 4rem;
@@ -1200,8 +1171,6 @@ h3.writing-title {
 
 p.desc {
     font-size: 1.2rem;
-    /* border: 1px solid black; */
-    /* padding: 2rem; */
 }
 
 .skill-item p {
@@ -1389,17 +1358,7 @@ p.desc {
         color: rgba(0,0,0,.45);
     }
 
-
     .pointer {
         left: 15rem;
     }
-
-}
-
-/* ******************************************************************************************************* */
-
-/* DESKTOP MEDIA QUERY *********************************************************************************** */
-
-@media only screen and (min-width : 1200px) {
-
 }
