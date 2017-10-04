@@ -914,8 +914,7 @@ a.glitch {
 
   .about-me {
     font-size: 1.2rem;
-    /* padding-top: 1rem; */
-    width: 70%; }
+    /* padding-top: 1rem; */ }
 
   .contact-item p {
     font-size: .8rem; }
@@ -986,8 +985,6 @@ a.glitch {
     margin-bottom: 2rem;
     font-size: 2.5rem; }
 
-  .project-container,
-  .skills-wrapper,
   .writing-wrapper {
     width: 60%; }
 
