@@ -10,7 +10,7 @@ $navblue: #0090ff;
 // breakpoints
 $breakpoints: (
     small: 320px,
-    medium: 768px,
+    medium: 650px,
     large: 1024px
 );
 
@@ -143,7 +143,9 @@ a {
         padding-top: 69%;
     }
     @include respond-to(medium) {
-
+        font-size: 3rem;
+        padding-top: 20rem;
+        margin-bottom: 30%;
     }
 }
 
@@ -152,13 +154,16 @@ a {
     transform: rotate(35deg);
     -webkit-filter: invert(1);  
     filter: invert(1);
+    @include respond-to(medium) {
+        top: 15%;
+        left: 5%;
+        height: 40rem;
+        width: unset;
+    }
 }
 
 .white-screen {
     background-color: rgba(255,255,255,.9);
-    /* background-color: rgba(244, 161, 212, 0.83); */
-    /* background-color: rgba(255, 162, 219, 0.91); */
-    /* background-color: rgba(67, 245, 255, 0.91); */
     position: absolute;
     height: 100%;
     width: 100%;
@@ -176,6 +181,14 @@ a {
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 8rem;
+    @include respond-to(medium) {
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    @include respond-to(large) {
+        height: 100%;
+    }
 }
 
 /*======================================================================================================*/
@@ -188,9 +201,10 @@ a {
     padding-bottom: 7rem;
     text-align: left;
     font-size: 1.9rem;
-    color: black;
+    color: white;
     letter-spacing: 2px;
-    // font-family: $applefont;
+    font-family: $applefont;
+    font-size: 2.3rem;
 }
 
 .blue-divider {
@@ -206,11 +220,6 @@ a {
     margin-bottom: 5rem;
     z-index: 100;
 }
-
-.top-greeting {
-    color: white;
-}
-
 
 /*==========================================================================================================*/
 
@@ -770,7 +779,6 @@ p.read {
     justify-content: center;
     width: 10rem;
     height: 10rem;
-    /* margin-bottom: 2rem; */
 }
 
 .about-title {
@@ -882,13 +890,10 @@ p.read {
 }
 
 .about-me {
-    /* width: 40%; */
-    /* text-align: left; */
     font-size: .8rem;
     font-family: $applefont;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    /* text-align: justify; */
 }
 
 .email {
@@ -934,22 +939,13 @@ a.glitch {
 
 // @media only screen and (min-width : 360px) {
 
-//     .top-name {
-//         padding-top: 12rem;
-//     }
+    .project-container {
+        width: 90%;
+    }
 
-//     .top-greeting {
-//         font-size: 2.3rem;
-//         color: white;
-//     }
-
-//     .project-container {
-//         width: 90%;
-//     }
-
-//     .about-me {
-//         padding-top: 2rem;
-//     }
+    .about-me {
+        padding-top: 2rem;
+    }
 
 // }
 
@@ -960,10 +956,6 @@ a.glitch {
 @media only screen and (min-width : 360px) and (orientation: landscape) {
 
 /* PHONE LANDSCAPE TOP HEADER ==========================================================================================*/
-
-.top-name {
-    padding-top: 18rem;
-}
 
 .top-greeting {
     padding: 4rem;
@@ -978,22 +970,6 @@ a.glitch {
     width: 3.2rem;
     height: 3.2rem;
 }
-
-/*======================================================================================================*/
-
-/* PHONE LANDSCAPE FIRST DIVIDER ==========================================================================================*/
-
-
-/*======================================================================================================*/
-
-/* PHONE LANDSCAPE PROJECTS SECTION ==========================================================================================*/
-
-
-/*======================================================================================================*/
-
-/* PHONE LANDSCAPE BOTTOM SECTION ==========================================================================================*/
-
-
 }
 
 /* ******************************************************************************************************* */
@@ -1003,20 +979,6 @@ a.glitch {
 @media only screen and (min-width : 650px) {
 
 /* TABLET PORTRAIT TOP HEADER ==========================================================================================*/
-
-.flower {
-    top: 15%;
-    left: 5%;
-    height: 40rem;
-    width: unset;
-    /* height: 35rem; */
-}
-
-.top-name {
-    font-size: 3rem;
-    padding-top: 20rem;
-    margin-bottom: 30%;
-}
 
 .top-greeting {
     padding: 0;
@@ -1058,12 +1020,6 @@ a.glitch {
 
 .nav-item {
     font-size: 2rem;
-}
-
-.flower-container {
-    width: 100%;
-    padding-bottom: 0;
-    padding-top: 0;
 }
 
 .nav-list {
@@ -1250,20 +1206,8 @@ p.desc {
         left: 17.5%;
     }
 
-    .flower-container {
-        height: 100%;
-    }
-
-    .top-name {
-        /* padding-top: 29%; */
-    }
-
     .top-greeting {
         width: 60%;
-    }
-
-    p.desc {
-        /* font-size: 2rem; */
     }
 
     .skill-item {
@@ -1281,8 +1225,6 @@ p.desc {
     .my-pic-holder img {
         width: 20rem;
         height: 20rem;
-        /* margin-right: 3rem; */
-        /* align-self: center; */
     }
 
     .contact-item p {
@@ -1321,7 +1263,6 @@ p.desc {
         font-size: 1.2rem;
     }
 
-
     .mini-skills svg.handlebars {
         width: 6rem;
         height: 6rem;
@@ -1333,7 +1274,6 @@ p.desc {
 
     .skill-item {
         width: 6rem;
-        /* padding: 1rem; */
         margin: .5rem;
     }
 
@@ -1351,7 +1291,6 @@ p.desc {
         margin: 0;
         padding: 1rem;
         padding-bottom: 0;
-        /* font-weight: bold; */
         color: rgba(0,0,0,.45);
     }
 

@@ -78,7 +78,7 @@ a {
   justify-content: center;
   width: 100%;
   z-index: 2; }
-  @media (min-width: 768px) {
+  @media (min-width: 650px) {
     .top-container {
       margin-top: 1rem; } }
 
@@ -94,18 +94,26 @@ a {
   @media (min-width: 320px) {
     .top-name {
       padding-top: 69%; } }
+  @media (min-width: 650px) {
+    .top-name {
+      font-size: 3rem;
+      padding-top: 20rem;
+      margin-bottom: 30%; } }
 
 .flower {
   width: 100%;
   transform: rotate(35deg);
   -webkit-filter: invert(1);
   filter: invert(1); }
+  @media (min-width: 650px) {
+    .flower {
+      top: 15%;
+      left: 5%;
+      height: 40rem;
+      width: unset; } }
 
 .white-screen {
   background-color: rgba(255, 255, 255, 0.9);
-  /* background-color: rgba(244, 161, 212, 0.83); */
-  /* background-color: rgba(255, 162, 219, 0.91); */
-  /* background-color: rgba(67, 245, 255, 0.91); */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -122,6 +130,14 @@ a {
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 8rem; }
+  @media (min-width: 650px) {
+    .flower-container {
+      width: 100%;
+      padding-bottom: 0;
+      padding-top: 0; } }
+  @media (min-width: 1024px) {
+    .flower-container {
+      height: 100%; } }
 
 /*======================================================================================================*/
 /* NO QUERY FIRST DIVIDER ==========================================================================================*/
@@ -131,8 +147,10 @@ a {
   padding-bottom: 7rem;
   text-align: left;
   font-size: 1.9rem;
-  color: black;
-  letter-spacing: 2px; }
+  color: white;
+  letter-spacing: 2px;
+  font-family: -apple-system-, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.3rem; }
 
 .blue-divider {
   width: 100%;
@@ -146,9 +164,6 @@ a {
   justify-content: center;
   margin-bottom: 5rem;
   z-index: 100; }
-
-.top-greeting {
-  color: white; }
 
 /*==========================================================================================================*/
 /* NO QUERY PROJECTS SECTION ========================================================================================*/
@@ -622,8 +637,7 @@ p.read {
   align-items: center;
   justify-content: center;
   width: 10rem;
-  height: 10rem;
-  /* margin-bottom: 2rem; */ }
+  height: 10rem; }
 
 .about-title {
   display: flex;
@@ -719,13 +733,10 @@ p.read {
   border-radius: 5px; }
 
 .about-me {
-  /* width: 40%; */
-  /* text-align: left; */
   font-size: .8rem;
   font-family: -apple-system-, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   padding-top: 2rem;
-  padding-bottom: 3rem;
-  /* text-align: justify; */ }
+  padding-bottom: 3rem; }
 
 .email {
   color: #0053FF; }
@@ -760,13 +771,16 @@ a.glitch {
 
 /*=========================================================================================================*/
 /* PHONE PORTRAIT MEDIA QUERY **************************************************************************** */
+.project-container {
+  width: 90%; }
+
+.about-me {
+  padding-top: 2rem; }
+
 /* ******************************************************************************************************* */
 /* PHONE LANDSCAPE MEDIA QUERY **************************************************************************** */
 @media only screen and (min-width: 360px) and (orientation: landscape) {
   /* PHONE LANDSCAPE TOP HEADER ==========================================================================================*/
-  .top-name {
-    padding-top: 18rem; }
-
   .top-greeting {
     padding: 4rem;
     font-size: 2.6rem; }
@@ -776,30 +790,11 @@ a.glitch {
 
   .mini-skills svg {
     width: 3.2rem;
-    height: 3.2rem; }
-
-  /*======================================================================================================*/
-  /* PHONE LANDSCAPE FIRST DIVIDER ==========================================================================================*/
-  /*======================================================================================================*/
-  /* PHONE LANDSCAPE PROJECTS SECTION ==========================================================================================*/
-  /*======================================================================================================*/
-  /* PHONE LANDSCAPE BOTTOM SECTION ==========================================================================================*/ }
+    height: 3.2rem; } }
 /* ******************************************************************************************************* */
 /* TABLET PORTRAIT MEDIA QUERY **************************************************************************** */
 @media only screen and (min-width: 650px) {
   /* TABLET PORTRAIT TOP HEADER ==========================================================================================*/
-  .flower {
-    top: 15%;
-    left: 5%;
-    height: 40rem;
-    width: unset;
-    /* height: 35rem; */ }
-
-  .top-name {
-    font-size: 3rem;
-    padding-top: 20rem;
-    margin-bottom: 30%; }
-
   .top-greeting {
     padding: 0;
     padding-top: 6rem;
@@ -834,11 +829,6 @@ a.glitch {
 
   .nav-item {
     font-size: 2rem; }
-
-  .flower-container {
-    width: 100%;
-    padding-bottom: 0;
-    padding-top: 0; }
 
   .nav-list {
     width: 100%;
@@ -977,17 +967,8 @@ a.glitch {
     top: 0;
     left: 17.5%; }
 
-  .flower-container {
-    height: 100%; }
-
-  .top-name {
-    /* padding-top: 29%; */ }
-
   .top-greeting {
     width: 60%; }
-
-  p.desc {
-    /* font-size: 2rem; */ }
 
   .skill-item {
     width: 7rem; }
@@ -1000,9 +981,7 @@ a.glitch {
 
   .my-pic-holder img {
     width: 20rem;
-    height: 20rem;
-    /* margin-right: 3rem; */
-    /* align-self: center; */ }
+    height: 20rem; }
 
   .contact-item p {
     font-size: .8rem;
@@ -1042,7 +1021,6 @@ a.glitch {
 
   .skill-item {
     width: 6rem;
-    /* padding: 1rem; */
     margin: .5rem; }
 
   .story1 h4.what-do,
@@ -1057,7 +1035,6 @@ a.glitch {
     margin: 0;
     padding: 1rem;
     padding-bottom: 0;
-    /* font-weight: bold; */
     color: rgba(0, 0, 0, 0.45); }
 
   .pointer {
