@@ -1,10 +1,3 @@
-// function toggle(elementID) {
-//   var elementCSS = $(elementID.css('filter')
-//   if (elementCSS == 'invert(1)') {
-
-//   }
-// }
-
 $(document).ready( () => {
 
     $('.skill-item').mouseover( function (item) {
